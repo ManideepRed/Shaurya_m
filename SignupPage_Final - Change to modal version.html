@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devive-width,initial-scale=1.0">
+    <link rel="shortcut icon" href="logo-shaurya.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200..800&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Quicksand:wght@300..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+   <div class="shaurya-logo">
+      <img  src="logo-shaurya-bd7e4925.png">
+   </div>
+   
+   <div class="t">
+      <div></div>
+      <div class="title">REGISTER AT SHAURYA</div>
+      <div></div>
+   </div>
+   
+   <div class="kgp-logo">
+      <img class="kgplogoi" src="kgp-logo.png">
+   </div>
+    <div class="sideim">
+        <img src="shaurya-landing.png" class="s">
+    </div>
+   
+    <title>Shaurya - Sports Fest of IIT Kharagpur</title>
+    <style>
+     .t{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     }
+
+     .kgplogoi{
+        height: 55px;
+     }
+     .logos{
+      display: grid;
+     }
+
+     .kgp-logo{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+     .shaurya-logo{
+        position: fixed;
+    }
+     .s{
+        height: 180px;
+     }
+
+     .sideim{
+        display: inline;
+        position: fixed;
+        top: 300px;
+        left: 730px;
+     }
+
+
+     .mainbox{
+        background-color: gray;
+        width: 800px;
+        opacity: 0;
+        position: relative;
+        top: -445px;
+        left: 280px;
+        margin-left: 40px;
+        padding-left: 18px;
+        border-radius: 20px;
+        padding-top: 15px;
+        padding-bottom: 45px;
+        transform: scale(0.1);
+        display: block;
+        transition: transform 0.4s, opacity 0.4s
+     }
+
+
+     .open-mainbox{
+      opacity: 0.92;
+      transform: scale(0.8);
+     }
+
+     .inbox ,.inboxgen{
+        font-size: 35px;
+        font-family: "Teko",sans-serif;
+        display: block;
+        color: white;
+     }
+
+     .typebox{
+        display: block;
+        width: 90%;
+        height: 40px;
+        border: none;
+        border-radius: 4px;
+        font-size: 30px;
+        font-family: "Teko",sans-serif;
+     }
+    
+     .title{
+        color: white;
+        font-family: "Teko",sans-serif;
+        font-size: 100px;
+    }
+
+    @media (max-width: 1023px){
+      .title{
+      font-size: 70px;
+    }}
+
+    @media (max-width: 780px){
+      .title{
+     display: none;
+    }
+    }
+    
+     .nextbut{
+     margin-top: 70px;  
+     margin-left: 320px; 
+     height: 60px;
+     width: 120px;
+     font-family: "Teko",sans-serif;
+     font-size: 40px;
+     background: none;
+     color:rgb(251, 246, 246);
+     padding-top: 0px;
+     border: solid;
+     border-radius: 4px;
+     transition: color 0.1s;
+     }
+
+     .nextbut:hover{
+        cursor: pointer;
+        color: yellow;
+    }
+
+    .nextbut:active{
+     transition: background-color 0.1s;
+     background-color : red;
+    }
+
+     
+    .inboxgen{
+      width: 400px;
+      display: block;
+    }
+
+    .inboxgen a{
+      display: block;
+      z-index: 999;
+      text-decoration: none;
+      background-color: rgb(251, 246, 246);
+      color: rgb(55, 54, 54);
+      width: 725px;
+    }
+
+    .inboxgen a:hover{
+      background-color: rgb(192, 187, 187);
+    }
+
+    .inboxgen .genopt{
+      display: none;
+
+    }
+   
+    .genbut{
+      display: inline;
+      width: 725px;
+      border-radius: 4px;
+      border: none;
+      font-size: 30px;
+      height: 39px;
+      padding-right: 0px;
+      font-family: "Teko",sans-serif;
+      text-align: left;
+    }
+
+    .genbut:hover{
+      cursor: pointer;
+    }
+
+    .alertname1,.alertname2,.alertgmail,.alertnum,.alertgen,.alertpass1,.alertpass2{
+      color: red;
+      display: none;
+    }
+
+    .matter{
+      color: white;
+      font-family: "Teko",sans-serif;
+      font-size: 30px;
+      width:700px;
+      padding-left: 10px;
+      padding-top: 80px;
+    }
+  
+    .sport{
+      color: white;
+      font-family: "Teko",sans-serif;
+      font-size: 40px;
+   }
+    .sporttle{
+      font-size: 50px;
+      font-family: "Teko",sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .checkbox{
+      transform: scale(1.5);
+    }
+
+    .secbox{
+        background-color: gray;
+        width: 800px;
+        opacity: 0;
+        position: relative;
+        top: -1100px;
+        left: 280px;
+        margin-left: 40px;
+        padding-left: 18px;
+        border-radius: 20px;
+        padding-top: 15px;
+        padding-bottom: 45px;
+        transform: scale(0.1);
+        visibility: visible;
+        display: grid;
+        transition: transform 0.4s, opacity 0.4s
+     }
+
+     .thanks{
+        background-color: gray;
+        width: 800px;
+        opacity: 0;
+        position: relative;
+        top: -1600px;
+        left: 280px;
+        margin-left: 40px;
+        padding-left: 18px;
+        border-radius: 20px;
+        padding-top: 15px;
+        padding-bottom: 45px;
+        transform: scale(0.1);
+        visibility: visible;
+        display: grid;
+        transition: transform 0.4s, opacity 0.4s
+     }
+
+     .open-thanks{
+      transform: scale(0.9);
+      opacity: 0.92;
+     }
+
+    .open-secbox{
+       transform: scale(0.8);
+       opacity: 0.92;
+    }
+
+   .sportlist{
+      display: grid;
+      grid-template-columns: repeat(3,200px);
+     }
+
+   .t1,.t2{
+      color: white;
+      font-size: 50px;
+      font-family: "Teko",sans-serif;
+      text-align: center;
+   }
+
+   .alertsport{
+      color: red;
+      font-size: 40px;
+      font-family: "Teko",sans-serif;
+      text-align: center;
+      display: none;
+
+   }
+
+    </style>
+
+</head>
+
+
+<body style="background-color: black;">
+    <div class="befpop">
+      <div class="matter">IIT Kharagpur's annual sports fest, a thrilling showcase of athleticism and camaraderie, featuring a variety of sports events. Uniting students nationwide in the spirit of competition and sportsmanship</div>
+      <button class="nextbut" id="nextbut1">SIGN UP</button>
+    </div>
+
+    <div class="mainbox" id="mainbox">
+        <div class="inbox">
+            NAME
+            <input class="typebox" type="text" id="name">
+            <div class="alertname1" id="alertname1">Please enter your full name,must contain atleast 5 letters</div>
+            <div class="alertname2" id="alertname2">Name must contain letters only</div>
+        </div>
+        
+        <div class="inbox">
+            GMAIL ID
+            <input class="typebox" type="text" id="email">
+          <div class="alertgmail" id="alertgmail">Please enter your GMAIL ID</div>
+        </div>
+       
+       <div class="inbox">
+            CONTACT NUMBER
+          <input class="typebox" type="text" id="number">
+          <div class="alertnum" id="alertnum">Number must contain 10 digits</div>
+
+       </div>
+       <div class="inboxgen">
+         GENDER
+         <button class="genbut" id="genbut" onclick="toggle()"></button>
+         <div class="genopt" id="genopt">
+            <a href="#" onclick="selectopt('Male')">Male</a>
+            <a href="#" onclick="selectopt('Female')">Female</a>
+            <a href="#" onclick="selectopt('Other')">Other</a>
+         </div>
+         <div class="alertgen" id="alertgen">Please select an option</div>
+       </div>
+       <div class="inbox">
+          PASSWORD
+          <input class="typebox" type="password" id="pass">
+          <div class="alertpass1" id="alertpass1">Password must be of atleast 8 characters</div>
+       </div>
+       <div class="inbox">
+          CONFIRM PASSWORD
+          <input class="typebox" type="password" id="passc">
+          <div class="alertpass2" id="alertpass2">Confirm password not matching</div>
+       </div>
+       <a><button class="nextbut" onclick="checkandprint()" id="nextbut2">SIGN UP</button></a>
+    </div>
+
+   <div class="secbox" id="secbox">
+
+      <div class="sporttle">SELECT THE SPORTS YOU ARE INTERESTED IN </div>
+    
+    <div class="sportlist">
+      
+      <div>
+      <input type="checkbox" class="checkbox" id="ath-checkbox">
+      <label for="ath-checkbox" class="sport">Athletics</label>
+      </div>
+
+      <div>
+      <input type="checkbox" class="checkbox" id="bad-checkbox">
+      <label for="bad-checkbox" class="sport">Badminton</label>
+      </div>
+
+      <div>
+      <input type="checkbox" class="checkbox" id="bas-checkbox">
+      <label for="bas-checkbox" class="sport">Basketball</label>
+      </div>
+
+      <div>
+      <input type="checkbox" class="checkbox" id="che-checkbox">
+      <label for="che-checkbox" class="sport">Chess</label>
+      </div>
+
+      <div>
+      <input type="checkbox" class="checkbox" id="cri-checkbox">
+      <label for="cri-checkbox" class="sport">Cricket</label>
+      </div>
+
+      <div>
+      <input type="checkbox" class="checkbox" id="foo-checkbox">
+      <label for="foo-checkbox" class="sport">Football</label>
+      </div>
+
+      <div>
+      <input type="checkbox" class="checkbox" id="hoc-checkbox">
+      <label for="hoc-checkbox" class="sport">Hockey</label>
+      </div>
+
+      <div>
+      <input type="checkbox" class="checkbox" id="pow-checkbox">
+      <label for="pow-checkbox" class="sport">Powerlifting</label>
+      </div>
+
+      <div>
+      <input type="checkbox" class="checkbox" id="squ-checkbox">
+      <label for="squ-checkbox" class="sport">Squash</label>
+      </div>
+
+      <div>
+      <input type="checkbox" class="checkbox" id="tt-checkbox">
+      <label for="tt-checkbox" class="sport">Table Tennis</label>
+      </div>
+
+      <div>
+      <input type="checkbox" class="checkbox" id="ten-checkbox">
+      <label for="ten-checkbox" class="sport">Tennis</label>
+      </div>
+
+      <div>
+      <input type="checkbox" class="checkbox" id="vol-checkbox">
+      <label for="vol-checkbox" class="sport">Volleyball</label>
+      </div>
+
+      <div>
+      <input type="checkbox" class="checkbox" id="wei-checkbox">
+      <label for="wei-checkbox" class="sport">Weughtlifting</label>
+      </div>
+
+    </div>
+    <div class="alertsport" id="alertsport">PLEASE SELECT ATLEAST ONE SPORT</div>
+    <button class="nextbut" onclick="checkandprintsport()" id="nextbut3">NEXT</button>
+   </div>
+
+   <div class="thanks" id="thanks">
+      <div class="t1">YOUR REGISTRATION WAS SUCCESSFULL</div>
+      <div class="t2">RISE WITH SHAURYA</div>
+      <button class="nextbut" onclick="closereg()" id="nextbut4">DONE</button>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
